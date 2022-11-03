@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diskusi 5</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div id = "databinding">
+        <h3>Contoh V-Bind:</h3>
+        <a v-bind:href = "url">Klik disini untuk menuju ke laman UT<br/></a>
+        <h3>Contoh V-Model:</h3>
+        <h3>Sistem Kuliah</h3>
+        <input type = "radio" id = "SIPAS" value = "SIPAS" v-model = "picked">SIPAS
+        <input type = "radio" id = "NONSIPAS" value = "NONSIPAS" v-model = "picked">NONSIPAS
+        <h3>Sistem Kuliah yang di pilih: {{picked}} </h3>
+        <hr/>
+        <h3>Fakultas</h3>
+        <select v-model = "fakultas">
+           <option disabled value = "">Pilih salah satu</option>
+           <option>FKIP</option>
+           <option>FE</option>
+           <option>FST</option>
+           <option>FHISIP</option>
+           <option>PPs</option>
+        </select>
+        <h3>Fakultas yang dipilih : {{ fakultas }}</h3>
+        <hr/>
+     </div>
+    <script src="vue.min.js"></script>
+    <script src="app.js"></script>
+ </body>
+</html>
